@@ -112,14 +112,53 @@ Informationen über Konformationsänderungen zu gewinnen. Die resultierenden Dif
 jedoch schwierig zu interpretieren.
 
 Ziel des Versuchs ist es, zwei theoretische Methoden zur Berechnung von Protein Infrarot (Differenz-)Spektren kennenzulernen. Anhand von Wasser 
-und einem kleinen Protein wird die harmonische Normal Mode Analysis, sowie die zeitreihenbasierte Dipol-Autokorrelations Methode eingeführt. 
+und einem kleinen Protein wird die harmonische Normal Moden Analyse, sowie die zeitreihenbasierte Dipol-Autokorrelations-Methode eingeführt. 
 
-\section{Protein Biologie für Physiker}
-punktladungen
-freiheitsgrade
+\section{Frequenzanalyse} 
+In diesem Versuch werden zwei Methoden zur Frequenz- oder Spektralanalyse vorgestellt. Ein schönes Beispiel \footnote{Beispiel inspiriert von Peter Hamms Buch: ISBN 978-1-107-00005-6}
+für eine Frequenzanalyse ist das Spektrum eines teilweise gefüllten Weinglases. Eine Möglichkeit ein Spektrum zu erhalten ist mit dem Finger in
+fester Umlaufzeit den Glasrand anzuregen. Wiederholt man dieses Vorgehen für viele Anregungsfrequenzen, so erhält man zusammen mit der Schallantwort
+des Glases ein Resonanzfrequenzspektrum. Dieses ist jedoch nicht die einzige Möglichkeit. 
 
-\section{Theorie Normal Mode Analysis}\label{nmasection}
-Die Normal Mode Analysis (NMA) berechnet die Eigenfrequenzen eines Vielteilchensystems in Harmonischer Näherung. Dass bedeutet, dass sämtliche 
+Eine weitere Möglichkeit ist das Glas anzustoßen und den entstehenden Ton Fourier zu zerlegen. Das Fourierspektrum des Glases ist, bis auf 
+Messungenauigkeiten, identisch mit dem Spektrum durch Anregung mit dem Finger. Diese Methode entspricht der Dipol-Autokorrelations-Methode aus 
+dem zweiten Versuchsteil. Bei dieser Methode werden die Schwingungsfreiheitsgrade des Proteins durch thermische Energie, also der thermischen 
+Energie bei Raumtemperatur, angeregt. Die Konsequenz ist, dass sich das Protein zu bewegen beginnt. Einige dieser Bewegungen sind schnelle Schwingungen 
+andere sind langsamere Konformationsänderungen. Diese Bewegungen können ebenfalls Fourier zerlegt werden, hierzu wird das Dipolmoment des gesamten Proteins 
+aufgezeicht und anschließend Fourier zerlegt. Die Wahl des Dipolmoments als Observable ist mehr oder weniger willkühlich, jedoch lässt sich sich 
+das Dipolmomentspektrum mit dem experimentell gemessen Spektrum vergleichen, siehe Kapitel \ref{dipolespec}. Das Protein in diesem Versuch 
+wird durch klassische Punktteilchen und ein semi-empirisches Potential, das force field, beschrieben. Das resultierende Dipolmomentspektrum misst also
+auch die klassische Verteilung von thermischer Energie im Protein und berücksichtigt keine Nullpunktsenergie hochfrequenten quantenmechanischer 
+Schwingungen. Es handelt sich hier also auch um ein genähertes Spektrum.
+
+
+Die Normal Moden Analyse (NMA) ist etwas schwieriger anhand des Weinglases zu erklären. In einer NMA nähern wir das Potential des Weinglases als Überlagerung
+ungekoppelter harmonischer Oszillatoren mit Potential
+\begin{equation}
+ V(x_i)=\frac{1}{2} m_i \omega_i^2 x_i^2.
+\end{equation}
+Hierbei ist $\omega_i$ die Kreisfrequenz des harmonischen Oszillators $i$ und $x_i$ die Auslenkung aus der Ruhelage. Die Masse $m_i$ ist schwierig zu definieren, 
+da es sich ja nicht um einzelne schwingende Massenpunkte handelt. Im Kapitel \ref{nmasection} wird gezeigt, wie die Massen $m_i$ mit in die kollektiven Koordinaten
+$x_i$ integriert werden können.
+Nehmen wir nun an, dass das Weinglas in $x,y,z$ Richtung schwingen kann, dann würde unser harmonisches Weinglas aus drei Oszillatoren bestehen. Das ensprechende 
+Spektrum hätte drei Frequenzen. In einem Protein würden wir jedem Atom diese drei Freiheitsgrade zuordnen, sodass für $N$ Atome $3N$ Oszillatoren benötigt werden.
+Da in der Regel kein externes Potential anliegt, kann es keine gleizeitige periodische Bewegung (Translation, Rotation) aller Atome in eine Richtung geben.
+Aus diesem Grund betrachtet man meist $3N-6$ Freiheitsgrade, da sechs Frequenzen Null sein müssen. 
+Die Kreisfrequenzen $\omega_i=\sqrt{\frac{k_i}{m_i}}$ können wir aus den Kraftkonstanten $k_i$ 
+zu diesen Schwingungen bestimmen, indem wir an dem Glas in den drei Raumrichtungen $\Delta x$ ziehen und die Kraft 
+\begin{equation}
+ F_i=-k_i \Delta x
+\end{equation}
+messen. 
+
+Es ist schnell ersichtlich, dass für die Normal Moden Analyse eine sehr empfindliche Näherung gemacht wird. Diese ist exakt für harmonische Systeme
+wie zum Beispiel die unendliche Kette hamonischer Oszillatoren, oder die geschlossene Kette. Proteine sind leider meistens nicht harmonisch, weshalb
+das Spektrum der Normal Moden Analyse sehr große Abweichungen von experimentellen Messungen haben kann.
+
+
+
+\section{Theorie Normal Moden Analyse}\label{nmasection}
+Die Normal Moden Analyse (NMA) berechnet die Eigenfrequenzen eines Vielteilchensystems in Harmonischer Näherung. Dass bedeutet, dass sämtliche 
 Ergebnisse der NMA ausschließlich für vollständig harmonische Systeme exakt sind. Das exakte Potential $V(r_i)$ für $N$ Teilchen muss zerlegbar 
 sein in
 \begin{equation}
@@ -350,7 +389,7 @@ Eigenvektoren $\Omega_i$ herzustellen, welche den Vergleich mit dem Experiment e
 Die Änderung des Dipolmoments des Moleküls $\left(\frac{\partial \mu}{\partial \Omega_i}\right)_{\mu_0}$ in Richtung des Vektors $\Omega_i$ ist also (in harmonischer Näherung!) 
 entscheident dafür, wie stark eine bestimmte Schwingungsmode mit Frequenz $\omega_i$ Licht absorbiert.
 
-\section{Theorie Dipole Moment Spektrum}
+\section{Theorie Dipole Moment Spektrum}\label{dipolespec}
 Eine alternative Methode zur Berechnung eines IR-Absorptionsspektrums ist die Zeitreihenanalyse des Dipolmoments $\hat{\mu}(t)$ des Moleküls. Hierfür wird eine Molekulardynamiksimulation
 des Systems bei einer Temperatur $T$ durchgeführt, z.B. $T=300K$. Während der Simulation wird der Dipolmomentvektor $\hat{\mu}(t)$ aufgezeichnet. Anschließend wird mit Hilfe des
 Wiener-Khinchin Theorems aus der Zeitreihe 
@@ -496,6 +535,7 @@ Auf Wunsch kann die Auswertung der Daten auch am Versuchstag mittels Matlab oder
  \item Visualisiert die Wasserbox mittels PyMol und bestimmt die Boxdimensionen.
  \item Führe eine Energieminimierung und anschließend eine Normal Mode Analyse des Wassermoleküls, sowie der Wasserbox durch.
  \item Erstelle ein Histogramm der NMA Frequenzen für beide Systeme.
+ \item Speichert die Geschwindigszeitreihe der Wasserbox.
  \item Lasst euch von dem Assistenten die Berechnung des IR Absorbtionsspektrums mittels, calc\_nma\_amplitudes.py, aus den NMA Frequenzen $\omega_i$ und NMA Vektoren $\vec{\Omega}_i$ erklären.
  Berechne das Absorptionsspektrum für beide Systeme.
  \item Vergleiche das Absorptionsspektrum der Wasserbox mit dem Histogrammspektrum, welches ist sinnvoller?
@@ -531,20 +571,22 @@ gerne wissen in welchem Frequenzbereich er als erstes Messen soll, um ein sinnvo
  \item Plotte das Spektrum des Wasser Moleküls, sowie das Spektrum der Wasserbox. Beschreibe den Unterschied? Welche physikalischen Kräfte sind relevant?
  \item Bestimme das Differenzspektrum $S_{box}-S_{h2o}$. Welchem Experimentellen Setup entspricht dieses Differenzspektrum?
  \item Berechne aus der Geschwindigkeitsautokorrelationsfunktion von Wasser die Korrelationszeit. Was lernen wir über das 'Homöopathische Gedächnis' von Wasser, auf welchen Zeitskalen könnte es existieren?
- \item Berechne
- \item Vergleicht die Dipolmoment Spektren mit den NMA Spektren. In welchem Frequenzbereich ist die harmonische Näherung am
+ \item Vergleicht die berechneten Spektren mit dem experimentellen Absorptionsspektrum von Wasser.
+
+ \item Plotte das Dipol Spektrum für beide Proteine, sowie das Differenzspektrum. Bestimmt die Frequenz des Differenzpeaks $\omega_{diff}$.
+ \item Gleichung \ref{mastereq1} enthält den Winkel $\theta_{\mu,E_0}$ zwischen Feld $E_0$ und Dipolmoment $\mu$. Diese Gleichung gilt für eine Orientierung, wie erhält man hieraus die Absorptionswahrscheinlichkeit
+ $p_{m,s}(t)$ für beliebige Orientierungen? Integriere.
+ \item Nutze nun die modifizierte Gleichung \ref{mastereq1}, um für eine Feldfrequenz $\omega=\omega_{m,s}=\omega_{diff}$, einer Pulsdauer von $t=100$ fs und einem Feld $E_0=2\cdot10^8$ V/m
+ die Absorptionswahrscheinlichkeit $p_{m,s}$ auszurechnen. Plotte $p_{m,s}$ für verschiede Frequenzen $\omega$ bei festem $\omega_{m,s}=\omega_{diff}$.
  \item Berechne die Fouriertransformation der Kinetischen Energie $E_{kin}(t)$ des Protein Systems und plotte das Fourierspektrum (Betragsquadrat der Fourierkoeffizienten). Worin unterscheidet sich dieses
  Spektrum von Infrarot Absorptionsspektrum $A(\omega)$ des Proteins?
+ 
  \item In welchem Frequenzbereich regt ein Mikrowellenherd an und warum? Interpretiere anhand der Frequenzen aus dem berechneten Proteinspektrum, was \emph{nicht} mit den Molekülen im Essen geschieht. 
  \item Moderne Flugzeuge ermöglichen inflight Satelliten Internetverbindungen mittels $K_a$ Band Kommunikation (26.5-40 GHz). Wie sieht es hier aus?
  \item Das Dipolmoment einer Wolke aus $N$ Punktladungen $q_i$ sei definiert als $p=\sum_i^N q_i (r_i-r_{ref})$, wobei $r_i$ die Position der Ladung $q_i$
  mit Entwicklungspunkt $r_{ref}$ sei. Zeige, dass das Dipolmoment für $Q=\sum_i^N q_i=0$ unabhänging vom Entwicklungspunkt $r_{ref}$ ist. Was bedeutet dies für
  die Berechnung von Dipolmoment basierten Spektren wenn $Q\neq0$ ist (nicht unübliches Setup!)?
- \item Picard oder Janeway? 
 \end{enumerate}
-
-\section*{Aufgaben}
-Dieser Versuch besteht aus drei eigenst\"andigen Versuchsteilen, die aufeinander aufbauen.
 
 \end{document}
 
