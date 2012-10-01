@@ -62,13 +62,13 @@ Friedrich-Hund-Platz 1\\
 % Hier die Version (Jahreszahl+fortlfd. Nr+Sprache (D,E) definieren
 \newcommand{\vv}{2012.09/A}
 % Hier das Institut eintragen
-\newcommand{\vi}{Max-Planck-Institut f\"ur biophysikalische Chemie}
+\newcommand{\vi}{Max-Planck-Institut für biophysikalische Chemie}
 % Hier den/die Verfasser eintragen
 \newcommand{\va}{Timo Graen}
 
 \vspace{\fill}
 
-% auskommentieren f\"ur Bild:
+% auskommentieren für Bild:
 % \includegraphics[width=140mm]{logo.png}
 \includegraphics{oscillators.png}
 \vspace{\fill}
@@ -96,23 +96,24 @@ Version \vv & Autor: \va\\
 % 2. Kurze Zusammenfassung .....................
 
 \section*{Einleitung}
-Proteine sind die Arbeitstiere der Natur und als solche hochspezialisierte Nano-Maschinen. 
-Proteine sind k\"unstlichen Nanomaschinen weit überlegen, so existieren biomolekulare Motoren, Pumpen, selektive Kanäle, Signalgeber, etc.. 
-Leider existieren weder Bau- noch Gebrauchsanweisungen, welche uns Aufschluss \"uber die molekularen Funktionsweisen liefern könnten. 
-Die Erforschung der physikalischen Funktionsweise dieser Moleküle ähnelt stark dem Reverse-Engeneering in der Elektronik, basiert jedoch 
-deutlich stärker auf der Statistischen- und Quanten-Physik.
+Proteine sind die Arbeitstiere der Natur und als solche hochspezialisierte Nanomaschinen. 
+Sie sind von Menschen entworfenen Nanomaschinen noch weit überlegen, so existieren biomolekulare Motoren, Pumpen, selektive Kanäle, Signalgeber, etc.. 
+Leider existieren in der Natur weder Bau- noch Gebrauchsanweisungen, welche uns Aufschluss über die molekularen Funktionsweisen liefern könnten. 
+Die Erforschung der physikalischen Funktionsweise dieser Moleküle ist ein spannendes Gebiet der Biophysik und ähnelt stark dem Reverse Engineering 
+in der Elektronik, basiert jedoch deutlich stärker auf der Statistischen- und Quantenphysik.
 
-Ein großer Teil der Proteindynamik geschiet auf Zeit- und L\"angenskalen von fs-$\mu$s und 0.1-100 nm. Ein w\"unschenswerter Zugang zur 
-Erforschung von Proteinfunktionen sind Molekulare Filme, also bewegte Bilder mit atomarer Aufl\"osung. Leider existiert noch 
-keine experimentelle Methode um die erforderlichen Zeit und L\"angenskalen aufzul\"osen.
+Ein großer Teil der Proteindynamik geschieht auf Zeit- und Längenskalen von fs-$\mu$s und 0.1-100 nm. Ein wünschenswerter Zugang zur 
+Erforschung von Proteinfunktionen sind Molekulare Filme, also bewegte Bilder mit atomarer Auflösung. Leider existiert noch 
+keine experimentelle Methode um die erforderlichen Zeit und Längenskalen aufzulösen.
 
 Eine der zahlreichen experimentellen Methoden um trotzdem Informationen über die molekularen Prozesse der Proteinfunktion zu erlangen sind 
-Infrarot Differenz Spektren. Hierbei wird versucht über die Unterschiede im Absorptionsverhalten von Proteinen im Infrarot Bereich des Spektrums 
-Informationen über Konformationsänderungen zu gewinnen. Die resultierenden Differenzspektren enthalten die gewünschten Informationen sind 
-jedoch schwierig zu interpretieren.
+Infrarot Differenz Spektren. Hierbei wird versucht über die Unterschiede im Absorptionsverhalten von Proteinen im IR-Bereich
+Informationen über Konformationsänderungen zu gewinnen. Dieser Frequenzbereich regt überwiegend Molekül Schwingungen an. Die resultierenden 
+Differenzspektren enthalten die gewünschten Informationen sind jedoch schwierig zu interpretieren.
 
-Ziel des Versuchs ist es, zwei theoretische Methoden zur Berechnung von Protein Infrarot (Differenz-)Spektren kennenzulernen. Anhand von Wasser 
-und einem kleinen Protein wird die harmonische Normal Moden Analyse, sowie die zeitreihenbasierte Dipol-Autokorrelations-Methode eingeführt. 
+Ziel des Versuches ist es, zwei theoretische Methoden zur Berechnung von Protein Infrarot (Differenz-)Spektren kennenzulernen. Anhand von Wasser 
+und zwei kleinen Proteinen wird die harmonische Normal Moden Analyse, sowie die Zeitreihen basierte Dipol-Autokorrelationsmethode eingeführt. Wir 
+untersuchen das 'Gedächtnis' von Wasser und helfen einem befreundeten Chemiker ein Infrarot Absorption Experiment zu entwerfen.
 
 \section{Frequenzanalyse} 
 In diesem Versuch werden zwei Methoden zur Frequenz- oder Spektralanalyse vorgestellt. Ein schönes Beispiel \footnote{Beispiel inspiriert von Peter Hamms Buch: ISBN 978-1-107-00005-6}
@@ -121,14 +122,14 @@ fester Umlaufzeit den Glasrand anzuregen. Wiederholt man dieses Vorgehen für vi
 des Glases ein Resonanzfrequenzspektrum. Dieses ist jedoch nicht die einzige Möglichkeit. 
 
 Eine weitere Möglichkeit ist das Glas anzustoßen und den entstehenden Ton Fourier zu zerlegen. Das Fourierspektrum des Glases ist, bis auf 
-Messungenauigkeiten, identisch mit dem Spektrum durch Anregung mit dem Finger. Diese Methode entspricht der Dipol-Autokorrelations-Methode aus 
+Messungenauigkeiten, identisch mit dem Spektrum durch Anregung mit dem Finger. Diese Methode entspricht der Dipol-Autokorrelationsmethode aus 
 dem zweiten Versuchsteil. Bei dieser Methode werden die Schwingungsfreiheitsgrade des Proteins durch thermische Energie, also der thermischen 
 Energie bei Raumtemperatur, angeregt. Die Konsequenz ist, dass sich das Protein zu bewegen beginnt. Einige dieser Bewegungen sind schnelle Schwingungen 
 andere sind langsamere Konformationsänderungen. Diese Bewegungen können ebenfalls Fourier zerlegt werden, hierzu wird das Dipolmoment des gesamten Proteins 
-aufgezeicht und anschließend Fourier zerlegt. Die Wahl des Dipolmoments als Observable ist mehr oder weniger willkühlich, jedoch lässt sich sich 
-das Dipolmomentspektrum mit dem experimentell gemessen Spektrum vergleichen, siehe Kapitel \ref{dipolespec}. Das Protein in diesem Versuch 
-wird durch klassische Punktteilchen und ein semi-empirisches Potential, das force field, beschrieben. Das resultierende Dipolmomentspektrum misst also
-auch die klassische Verteilung von thermischer Energie im Protein und berücksichtigt keine Nullpunktsenergie hochfrequenten quantenmechanischer 
+aufgezeichnet und anschließend Fourier zerlegt. Die Wahl des Dipolmoments als Observable ist mehr oder weniger willkürlich, jedoch lässt sich 
+das Dipolmoment Spektrum mit dem experimentell gemessen Spektrum vergleichen, siehe Kapitel \ref{dipolespec}. Das Protein in diesem Versuch 
+wird durch klassische Punktteilchen und ein semi-empirisches Potential, das force field, beschrieben. Das resultierende Dipolmoment Spektrum misst also
+auch die klassische Verteilung von thermischer Energie im Protein und berücksichtigt keine Nullpunktenergie hochfrequenten quantenmechanischer 
 Schwingungen. Es handelt sich hier also auch um ein genähertes Spektrum.
 
 
@@ -140,9 +141,9 @@ ungekoppelter harmonischer Oszillatoren mit Potential
 Hierbei ist $\omega_i$ die Kreisfrequenz des harmonischen Oszillators $i$ und $x_i$ die Auslenkung aus der Ruhelage. Die Masse $m_i$ ist schwierig zu definieren, 
 da es sich ja nicht um einzelne schwingende Massenpunkte handelt. Im Kapitel \ref{nmasection} wird gezeigt, wie die Massen $m_i$ mit in die kollektiven Koordinaten
 $x_i$ integriert werden können.
-Nehmen wir nun an, dass das Weinglas in $x,y,z$ Richtung schwingen kann, dann würde unser harmonisches Weinglas aus drei Oszillatoren bestehen. Das ensprechende 
+Nehmen wir nun an, dass das Weinglas in $x,y,z$ Richtung schwingen kann, dann würde unser harmonisches Weinglas aus drei Oszillatoren bestehen. Das entsprechende 
 Spektrum hätte drei Frequenzen. In einem Protein würden wir jedem Atom diese drei Freiheitsgrade zuordnen, sodass für $N$ Atome $3N$ Oszillatoren benötigt werden.
-Da in der Regel kein externes Potential anliegt, kann es keine gleizeitige periodische Bewegung (Translation, Rotation) aller Atome in eine Richtung geben.
+Da in der Regel kein externes Potential anliegt, kann es keine gleichzeitige periodische Bewegung (Translation, Rotation) aller Atome in eine Richtung geben.
 Aus diesem Grund betrachtet man meist $3N-6$ Freiheitsgrade, da sechs Frequenzen Null sein müssen. 
 Die Kreisfrequenzen $\omega_i=\sqrt{\frac{k_i}{m_i}}$ können wir aus den Kraftkonstanten $k_i$ 
 zu diesen Schwingungen bestimmen, indem wir an dem Glas in den drei Raumrichtungen $\Delta x$ ziehen und die Kraft 
@@ -152,28 +153,28 @@ zu diesen Schwingungen bestimmen, indem wir an dem Glas in den drei Raumrichtung
 messen. 
 
 Es ist schnell ersichtlich, dass für die Normal Moden Analyse eine sehr empfindliche Näherung gemacht wird. Diese ist exakt für harmonische Systeme
-wie zum Beispiel die unendliche Kette hamonischer Oszillatoren, oder die geschlossene Kette. Proteine sind leider meistens nicht harmonisch, weshalb
+wie zum Beispiel die unendliche Kette harmonischer Oszillatoren, oder die geschlossene Kette. Proteine sind leider meistens nicht harmonisch, weshalb
 das Spektrum der Normal Moden Analyse sehr große Abweichungen von experimentellen Messungen haben kann.
 
 
 
 \section{Theorie Normal Moden Analyse}\label{nmasection}
-Die Normal Moden Analyse (NMA) berechnet die Eigenfrequenzen eines Vielteilchensystems in Harmonischer Näherung. Dass bedeutet, dass sämtliche 
+Die Normal Moden Analyse (NMA) berechnet die Eigenfrequenzen eines Vielteilchensystems in harmonischer Näherung. Das bedeutet, dass sämtliche 
 Ergebnisse der NMA ausschließlich für vollständig harmonische Systeme exakt sind. Das exakte Potential $V(r_i)$ für $N$ Teilchen muss zerlegbar 
 sein in
 \begin{equation}
  V(x_i)=\sum_i^N c_i x_i^2
 \end{equation}
-mit $c_i=\frac{1}{2}m_i \omega_i^2$. $m_i$ sind die Atommassen und $\omega_i$ die Frequenzen zur Koordinate $r_i$. Für alle anderen Potentiale ist 
+mit $c_i=\frac{1}{2}m_i \omega_i^2$. $m_i$ sind die Atommassen und $\omega_i$ die Frequenzen zur Koordinate $x_i$. Für alle anderen Potentiale ist 
 die NMA eine mehr oder weniger gute Näherung. Die Qualität der Ergebnisse wird besonders in der chemischen Literatur häufig überschätzt.
 
-Alternativ kann die NMA physikalisch auch als harmonisches Glied in der Taylorserie eines beliebigen Potentials 
+Alternativ kann die NMA physikalisch auch als harmonisches Glied in der Taylorreihe eines beliebigen Potentials 
 \begin{equation}
  V=V_0+\sum_i^N \left( \frac{\partial V}{\partial x_i} \right) x_i + \frac{1}{2} \sum_i^N \sum_j^N \left( \frac{\partial^2 V}{\partial x_i \partial x_j} \right) + \ldots
 \end{equation}
-betrachtet werden. Es muss noch eine geeinete Konfiguration gewählt werden, um welche entwickelt wird. Hierfür bietet sich die Konfiguration beim absoluten Temperatur Nullpunkt
-bei 0 K an, unter der Annahme, dass die Teilchen klassisch sind. Die Nullpunktsenergie definieren wir als Referenzenergie $V_0=0$ und die erste Ableitung ist per Definition 
-des Energieminimums $\frac{\partial V}{\partial x_i}=0$. Damit verbleibt für kleine Auslenkungen von der Nullpunktsstruktur
+betrachtet werden. Es muss noch eine geeignete Konfiguration gewählt werden, um welche entwickelt wird. Hierfür bietet sich die Konfiguration beim absoluten Temperatur Nullpunkt
+bei 0 K an, unter der Annahme, dass die Teilchen klassisch sind. Die Nullpunktenergie definieren wir als Referenzenergie $V_0=0$ und die erste Ableitung ist per Definition 
+des Energieminimums $\frac{\partial V}{\partial x_i}=0$. Damit verbleibt für kleine Auslenkungen von der Nullpunkt Struktur
 \begin{equation}
  V\approx\frac{1}{2} \sum_i^N \sum_j^N \left( \frac{\partial^2 V}{\partial x_i \partial x_j} \right).
 \end{equation}
@@ -199,7 +200,7 @@ Ein einfacher Algorithmus, um das nächstliegende Energieextremum zu finden ist 
  \caption{Gekoppelter Harmonischer Oszillator, Massen $m_i$, Kraft Konstanten $k_i$ und Positionen $x_i$}
  \label{fig:hos}
 \end{figure}
-Sobald die Struktur vorliegt verhält sich der Rest der Analyse analog zum gekoppelten harmonischen Oscillator.
+Sobald die Struktur vorliegt verhält sich der Rest der Analyse analog zum gekoppelten harmonischen Oszillator.
 Wir benutzen einige Eigenschaften des Harmonischen Oszillators $V=\frac{1}{2}kx^2$:
 \begin{equation}
  F=-\frac{dV}{dx}=-kx=ma=m\frac{d^2x}{dt^2}
@@ -247,10 +248,10 @@ oder
 \end{equation}
 vereinfacht werden kann. Wichtig ist, dass das Ziel dieser Umformung das Auffinden von koherenten Bewegungen, also Bewegungen welche in
 Phase mit der gleichen Frequenz schwingen, mehrerer Atome ist. Daher gibt es nur $\omega$ und nicht $\omega_i$ in den oben stehenden
-Gleichungen. Die Eigenwerte dieser Gleichung $\omega_i^2$ sind jedoch das Quadrad der gesuchten $N$ Harmonischen 
-Eiqenfrequenzen $\omega_i$ des Systems. Zusätzlich erhält man in der NMA einen vollständigen Satz an Eigenvektoren $\Omega_i$, 
-welche jedoch immernoch in Massengewichteten Koordinaten vorliegen und die Dimension [Masse$^{1/2}$ Länge] haben.
-\section{Infrarot Absorptions Experimente}
+Gleichungen. Die Eigenwerte dieser Gleichung $\omega_i^2$ sind jedoch das Quadrat der gesuchten $3N-6$ Harmonischen 
+Eigenfrequenzen $\omega_i$ des Systems. Zusätzlich erhält man in der NMA einen vollständigen Satz an Eigenvektoren $\Omega_i$, 
+welche jedoch immer noch in Massen gewichteten Koordinaten vorliegen und die Dimension [Masse$^{1/2}$ Länge] haben.
+\section{Infrarot Absorption im Experiment}
 \begin{figure}[ht!]
  \centering
  \includegraphics[scale=0.2,keepaspectratio=true]{./spektrum_exp_nma.png}
@@ -269,18 +270,18 @@ Die theoretisch bestimmten Schwingungsfrequenzen $\omega_i$ aus Abschnitt \ref{n
 werden, jedoch kann noch keine Aussage über die Absorptionsintensität getroffen werden. Abbildung \ref{fig:nma_exp_comp} ist eine Illustration,
 welche die Unterschiede in der Absorptionsintensität veranschaulicht.
 
-Die Berechnung der Absorptionsintensität ist ein wenig komplizierter als die Berechnung der Frequenzen. In erster Näherung wechselwirkt das
-das elektrische Feld $\vec{E}(x,t)=\vec{E}_0(x)e^{-i\omega t}$ eine IR-Photons mit dem Dipolmoment $\vec{\mu}$ des Moleküls. Diese Wechselwirkung
+Die Berechnung der Absorptionsintensität ist ein wenig komplizierter als die Berechnung der Frequenzen. In erster Näherung wechselwirkt das 
+elektrische Feld $\vec{E}(x,t)=\vec{E}_0(x)e^{-i\omega t}$ eines IR-Photons mit dem Dipolmoment $\vec{\mu}$ des Moleküls. Diese Wechselwirkung
 wird als Störung 
 \begin{equation}
 \hat{H}'= \vec{\mu}\cdot \vec{E}(x,t)
 \end{equation}
- des Molekülhamiltonians $\hat{H}_0$ betrachtet. So ergibt sich für den gesamt Hamiltonian 
+ des Molekül Hamilton Operators $\hat{H}_0$ betrachtet. So ergibt sich für den gesamt Hamilton Operator 
 \begin{equation}
  \hat{H}=\hat{H_0}+\hat{H}'
 \end{equation}
 
-Dieser Gesamthamilonian kann nun in die Zeitabhängige Schrödingergleichung 
+Dieser Gesamthamiltonian kann nun in die Zeitabhängige Schrödingergleichung 
 
 \begin{equation}\label{schroedinger}
  \hat{H}\psi(x,t)=-\frac{\hbar}{i} \frac{\partial \psi(x,t)}{\partial t}
@@ -293,11 +294,11 @@ eingesetzt werden und ergibt
 \end{equation}
 
 
-Die resultierende gestörte Wellenfunktion $\psi'(x,t)$ kann anschließend in der Basis der Eigenfunktionen $\psi_n(x,t)=\psi_n(x) e^{-iE_nt/\hbar}$ des ungestörten Hamiltonoperators $\hat{H}$ ausgedrückt werden als
+Die resultierende gestörte Wellenfunktion $\psi'(x,t)$ kann anschließend in der Basis der Eigenfunktionen $\psi_n(x,t)=\psi_n(x) e^{-iE_nt/\hbar}$ des ungestörten Hamilton Operators $\hat{H}$ ausgedrückt werden als
 \begin{equation}\label{wfexpansion}
  \psi'(x,t)=\sum_n a_n(t) \psi_n(x) e^{-iE_nt/\hbar}.
 \end{equation}
-Die Entwicklungkoeffizienten $a_n(t)$ enthalten die gesuchte Information über die Wahrscheinlichkeit $p_m(t)=|a_m(t)|^2$ das ursprüngliche System $\psi_s(x)$ in dem finalen Zustand $\psi_m(x)$ 
+Die Entwicklungskoeffizienten $a_n(t)$ enthalten die gesuchte Information über die Wahrscheinlichkeit $p_m(t)=|a_m(t)|^2$ das ursprüngliche System $\psi_s(x)$ in dem finalen Zustand $\psi_m(x)$ 
 nach Zeit $t$ zu finden. Dieser finale Zustand kann z.B. das System nach Absorption des Photons sein. Das Ziel ist es also im Folgenden Teil eine sog. Mastergleichung der Form
 \begin{equation}
  \dot{a}_i=C a_i
@@ -347,22 +348,22 @@ Hieraus erhalten wir die Koeffizientengleichung
 \end{equation}
 Aus der Koeffizientengleichung \ref{amsolution} kann nun wie oben beschrieben, die Übergangswahrscheinlichkeit 
 \begin{equation}\label{mastereq1}
- p_{m,s}(t)=|a_m(t)|^2 = \frac{2}{\hbar}|\hat{H}_{m,s}'|^2 \frac{1-cos((\omega_{m,s}-\omega) t)}{(\omega_{m,s}-\omega)^2}
+ p_{m,s}(t)=|a_m(t)|^2 = \frac{2}{\hbar^2}|\hat{H}_{m,s}'|^2 \frac{1-cos((\omega_{m,s}-\omega) t)}{(\omega_{m,s}-\omega)^2}
 \end{equation}
-von Zustand $\ket{s}$ in den Zustand $\ket{m}$ mittels Lichtabsorbtion. 
+von Zustand $\ket{s}$ in den Zustand $\ket{m}$ mittels Lichtabsorption. 
 In unserem Fall ist die Störung das elektrische Feld eines Photons $\vec{E}(x,t)=\vec{E}_0(x)e^{-i\omega t}$ welches mit dem Dipolmoment $\mu$ des Systems wechselwirkt,
 \begin{equation}\label{perturbationE}
 \hat{H}'=\vec{\mu}\cdot \vec{E}(x,t) 
 \end{equation}
-Die Wechselwirkung ist maximal, wenn Feld und Dipolmoment parallele Ausrichtung haben und Null für sekrechte Ausrichtungen. 
+Die Wechselwirkung ist maximal, wenn Feld und Dipolmoment parallele Ausrichtung haben und Null für senkrechte Ausrichtungen. 
 
 Setzten wir nun den Wechselwirkung \ref{perturbationE} in die Gleichung für die Übergangswahrscheinlichkeit \ref{mastereq1} ein, so erhalten wir die gesuchte Absorptionswahrscheinlichkeit
 \begin{equation}\label{mastereq2}
- p_{m,s}(t)= \frac{4}{\hbar^2}|\bra{\psi_m} \vec{\mu} \ket{\psi_s} |^2 |\vec{E_0}|^2 cos^2(\theta_{\mu,E_0}) \frac{1-cos((\omega_{m,s}-\omega) t)}{(\omega_{m,s}-\omega)^2}.
+ p_{m,s}(t)= \frac{2}{\hbar^2}|\bra{\psi_m} \vec{\mu} \ket{\psi_s} |^2 |\vec{E_0}|^2 cos^2(\theta_{\mu,E_0}) \frac{1-cos((\omega_{m,s}-\omega) t)}{(\omega_{m,s}-\omega)^2}.
 \end{equation}
-Diese Gleichung kann nun benutzt werden, um aus unsere NMA Berechnung mit dem Experiment zu vergleichen.
+Diese Gleichung kann nun benutzt werden, um aus unsere NMA mit dem Experiment zu vergleichen.
 Gleichung \ref{mastereq2} verknüpft die Übergangswahrscheinlichkeit $p_{m,s}$, oder auch Intensität $I_{m,s}$, mit dem Dipolmoment Operator $\vec{\mu}=\sum_i e_i \vec{x}_i$. $e_i$ 
-ist die effective Ladung von Atom i und $\vec{x}_i$ ist der Vector von Atom $i$ in Bezug auf den Schwerpunkt des Systems. 
+ist die effektive Ladung von Atom i und $\vec{x}_i$ ist der Vektor von Atom $i$ in Bezug auf den Schwerpunkt des Systems. 
 Wir sehen nun, dass die Intensität $I_{m,s}$ für den Übergang von Zustand $\ket{s}$ nach Zustand $\ket{m}$ 
 \begin{equation}\label{intensityeq1}
  I_{m,s} \varpropto \left( [\hat{\mu}_x]^2_{m,s} + [\hat{\mu}_y]^2_{m,s} + [\hat{\mu}_z]^2_{m,s} \right),
@@ -372,7 +373,7 @@ wobei
 [\hat{\mu}_j]_{m,s}=\bra{\psi_m}\hat{\mu}_j \ket{\psi_s}. 
 \end{equation}
 
-Die Übergangsintensitäten können in harmonischer Näherung durch Taylorentwickung des Dipolmoment Operators entlang der NMA Eigenvectoren $\Omega_i$ berechnet werden
+Die Übergangsintensitäten können in harmonischer Näherung durch Taylor Entwicklung des Dipolmoment Operators entlang der NMA Eigenvektoren $\Omega_i$ berechnet werden
 \begin{equation}\label{mutaylor}
  \vec{\mu} \approx  \vec{\mu}_0 + \sum_{i=1}^{3N-6} \left(\frac{\partial \vec{\mu}}{\partial \Omega_i}\right)_{\mu_0} \Omega_i.
 \end{equation}
@@ -387,12 +388,14 @@ Für die Elemente $[\hat{\mu}_j]_{m,s}$ gilt:
 Diese letzte Gleichung kann nun in Gleichung \ref{mastereq2} eingesetzt werden, um die wichtige Verbindung zwischen Frequenzen $\omega_i$, Übergangsintensitäten $I_{m,s}$, und den NMA
 Eigenvektoren $\Omega_i$ herzustellen, welche den Vergleich mit dem Experiment ermöglichen.
 Die Änderung des Dipolmoments des Moleküls $\left(\frac{\partial \mu}{\partial \Omega_i}\right)_{\mu_0}$ in Richtung des Vektors $\Omega_i$ ist also (in harmonischer Näherung!) 
-entscheident dafür, wie stark eine bestimmte Schwingungsmode mit Frequenz $\omega_i$ Licht absorbiert.
+entscheidend dafür, wie stark eine bestimmte Schwingungsmode mit Frequenz $\omega_i$ Licht absorbiert.
 
 \section{Theorie Dipole Moment Spektrum}\label{dipolespec}
-Eine alternative Methode zur Berechnung eines IR-Absorptionsspektrums ist die Zeitreihenanalyse des Dipolmoments $\hat{\mu}(t)$ des Moleküls. Hierfür wird eine Molekulardynamiksimulation
-des Systems bei einer Temperatur $T$ durchgeführt, z.B. $T=300K$. Während der Simulation wird der Dipolmomentvektor $\hat{\mu}(t)$ aufgezeichnet. Anschließend wird mit Hilfe des
-Wiener-Khinchin Theorems aus der Zeitreihe 
+Eine alternative Methode zur Berechnung eines IR-Absorptionsspektrums ist die Zeitreihenanalyse des Dipolmoments $\hat{\mu}(t)$ des Moleküls. Hierfür wird eine Molekulardynamik Simulation
+des Systems bei einer Temperatur $T$ durchgeführt, z.B. $T=300K$. Während der Simulation wird der Dipolmoment Vektor $\hat{\mu}(t)$ aufgezeichnet. Im Nachfolgenden Teil berechnen wir die 
+Absorptionsintensitäten, indem wir $\left(\frac{\partial \mu}{\partial \Omega_i}\right)_{\mu_0}$ aus der Zeitreihenanalyse des Dipolmoments der Simulationsbox berechnen. Anstelle der
+Zeitreihe benutzen wir die Autokorrelationsfunktion der Zeitreihe, da diese nicht mehr explizit von der Simulationszeit $t$ abhängt. Durch die Verwendung der Autokorrelationsfunktion 
+geht die relevante spektrale Information nicht verloren, jedoch reduzieren wir das Rauschen der Daten. Wir benutzten das Wiener-Khinchin Theorem, um aus der Zeitreihe 
 
   \begin{equation}
    \mu(t) = \left\{ 
@@ -411,8 +414,8 @@ Als nächstes nutzt man die Definition der Autokorrelationsfunktion
   \begin{equation}
    R(\tau)=E[\mu^*(t) \mu(t+\tau)],
   \end{equation}
-wobei $E[]$ das Ensemblemittel ist. Wir nehmen im weiteren Verlauf Ergodicität an, wobei dieses auch dem Zeitmittel entspricht. 
-Mit Hilfe der spektralen Leistungdichte (power spectral density) 
+wobei $E[]$ das Ensemblemittel ist. Wir nehmen im weiteren Verlauf Ergodizität an, wobei dieses auch dem Zeitmittel entspricht. 
+Mit Hilfe der spektralen Leistungsdichte (Power Spectral Density) 
   \begin{equation}\label{preKWT}
    S(\omega) = \lim_{T\rightarrow\infty} \frac{1}{2T} E[|F_T(\omega)|^2]
   \end{equation}
@@ -431,47 +434,47 @@ Das Wiener-Khinchin Theorem lautet:
     S(\omega)          =\int_{-\infty}^{\infty} R(\tau) e^{-i\omega\tau} d\tau. 
   \end{equation}
 Es sagt aus, dass die Power Spectral Density $S(\omega)$ die Fourier Transformierte der Signal Autokorrelationsfunktion $R(\tau)$ ist.
-Durch Verwendung des Dipolmoments in der Autocorrelationsfunktion $R(\tau)$ erfüllt diese Methode explizit die Bedingung aus Gleichung \ref{maximu}. Somit werden nur IR aktive Frequenzen im
-Dipolspektrum identifiziert. Das Wiener-Khinchin Theorem kann nur für stationäre Signale verwendet, welche einen Mittelwert von Null haben und Stationär sind. Dieses ist für Proteintrajektorien 
+Durch Verwendung des Dipolmoments in der Autokorrelationsfunktion $R(\tau)$ erfüllt diese Methode explizit die Bedingung aus Gleichung \ref{maximu}. Somit werden nur IR aktive Frequenzen im
+Dipol Spektrum identifiziert. Das Wiener-Khinchin Theorem kann nur für stationäre Signale verwendet, welche einen Mittelwert von Null haben und Stationär sind. Dieses ist für Protein Trajektorien 
 näherungsweise erfüllt, wenn diese ihre Konformation nicht zu stark ändern. Konformationsänderungen führen häufig zu einem Drift in der Dipolmoment Zeitreihe, weshalb diese nicht mehr stationär ist.
 
 Das Infrarot Absorptionsspektrum $A(\omega)$ kann nun mittels 
 \begin{equation}
  A(\omega)= \hbar\omega \left( 1-e^{-\frac{\hbar \omega}{k_B T}} \right) S(\omega)
 \end{equation}
-berechnet werden.
+berechnet werden. 
 
 
 
-\subsection*{Molekulardynamiksimulationen\footnote{Kapitel gestohlen von Christian Kappel 2010, http://en.wikipedia.org/wiki/Copyleft}}
+\subsection*{Molekulardynamik Simulationen\footnote{Kapitel gestohlen von Christian Kappel 2010, http://en.wikipedia.org/wiki/Copyleft}}
 
 Die Methode der Molekulardynamik-Simulationen (MD-Simulationen) dient zur
-Bestimmung der Bewegungen von molekularen Systemen in der Gr\"o\ss enordnung von
-100 bis $10^6$ Atomen innerhalb einer vorgebenen Zeitspanne.
-Die exakte Beschreibung eines solchen Systems ist durch die zeitabh\"angige
-Schr\"odingergleichung f\"ur die Atomkerne und Elektronen gegeben. Allerdings ist
-diese Methode schon f\"ur mehr als 10 Atome zu aufwendig. Um gr\"o\ss ere Systeme
+Bestimmung der Bewegungen von molekularen Systemen in der Größenordnung von
+100 bis $10^6$ Atomen innerhalb einer vorgegebenen Zeitspanne.
+Die exakte Beschreibung eines solchen Systems ist durch die zeitabhängige
+Schrödingergleichung für die Atomkerne und Elektronen gegeben. Allerdings ist
+diese Methode schon für mehr als 10 Atome zu aufwendig. Um größere Systeme
 trotzdem zu simulieren werden bei MD-Simulation drei Approximationen angewandt:
 
 \begin{itemize}
     \item Da die Elektronen viel leichter als die Atomkerne sind, ist deren Bewegung
           entsprechend viel schneller als die der Atomkerne. Entsprechend kann man im Rahmen der
-          Born-Oppenheimer-N\"aherung die Freiheitsgrade der Elektronen von denen der
+          Born-Oppenheimer-Näherung die Freiheitsgrade der Elektronen von denen der
           Atomkerne separieren, was zu einer Beschreibung von bewegten Elektronen bei
-          ruhenden Atomr\"umpfen f\"uhrt. Der Einfluss der elektronischen Dynamik auf die
-          Kernbewegung l\"asst sich dadurch durch ein
-          effektives Potential beschreiben, welches nur von der Position der Kerne abh\"angt.
+          ruhenden Atomrümpfen führt. Der Einfluss der elektronischen Dynamik auf die
+          Kernbewegung lässt sich dadurch durch ein
+          effektives Potential beschreiben, welches nur von der Position der Kerne abhängt.
     \item Dieses effektive Potential wird durch eine Summe von analytischen Funktionen
-          ($x^n$, $\cos(x)$) gen\"ahert. Dieses Kraftfeld
-          besteht aus einer Vielzahl einfacher Energiebeitr\"age die von den Kernkoordinaten
-          abh\"angen. Die Einzelbeitr\"age beschreiben einerseits die chemische Struktur der
-          Molek\"ule (Bindungen), zum anderen werden aber auch nicht-bindende
-          langreichweitge Wechselwirkungen ber\"ucksichtigt. Die Parameter eines Kraftfeldes
+          ($x^n$, $\cos(x)$) genähert. Dieses Kraftfeld
+          besteht aus einer Vielzahl einfacher Energiebeiträge die von den Kernkoordinaten
+          abhängen. Die Einzelbeiträge beschreiben einerseits die chemische Struktur der
+          Moleküle (Bindungen), zum anderen werden aber auch nicht-bindende
+          langreichweitige Wechselwirkungen berücksichtigt. Die Parameter eines Kraftfeldes
           werden durch Messungen und quantenmechanische Rechnungen bestimmt.
           In diesem Versuch wird das AMBER99sb-Kraftfeld verwendet.
-    \item Zuletzt wird die  Kernbewegung in klassischer N\"aherung durch die
+    \item Zuletzt wird die  Kernbewegung in klassischer Näherung durch die
           Newtonschen Bewegungsgleichungen beschrieben, welche numerisch integriert werde.
-          Dies geschieht \"uber
+          Dies geschieht über
           den leap-frog-Algorithmus, der eine rekursive Beschreibung der
           Atomkoordinaten $r(t)$ sowie Atomgeschwindigkeiten $v(t)$ liefert:
 
@@ -481,8 +484,8 @@ trotzdem zu simulieren werden bei MD-Simulation drei Approximationen angewandt:
 
           Die Integrationsschrittweite $\Delta t$ orientiert sich an den schnellsten
           Bewegungen im System. Bei Proteinen sind dies die Fluktuationen von gebundenen
-          Wasserstoffatomen, die typischerweise in der Gr\"o\ss enordnung $10^{-14}\,{\rm s}$
-          liegen. Um diese Bewegungen noch beschreiben zu k\"onnen, ben\"otigt man
+          Wasserstoffatomen, die typischerweise in der Größenordnung $10^{-14}\,{\rm s}$
+          liegen. Um diese Bewegungen noch beschreiben zu können, benötigt man
           Integrationsschrittweiten von $10^{-15}\,{\rm s}$.
 \end{itemize}
 
@@ -495,16 +498,16 @@ trotzdem zu simulieren werden bei MD-Simulation drei Approximationen angewandt:
 
 Vor dem Start einer MD-Simulation ist meistens eine
 Energieminimierung notwendig. Dabei werden die Atomkoordinaten
-so variiert, da\ss{} sich das System nach der Minimierung in einem
-Minimum der Energielandschaft befindet. Dieser Schritt ist n\"otig, weil
-Startstrukturen verzerrte Bindungen oder \"Uberlappungen von Atomen enthalten
-k\"onnen, was zu unrealistisch hohen Kr\"aften in der sp\"ateren MD-Simulation
-f\"uhren w\"urde.
+so variiert, dass sich das System nach der Minimierung in einem
+Minimum der Energielandschaft befindet. Dieser Schritt ist nötig, weil
+Startstrukturen verzerrte Bindungen oder Überlappungen von Atomen enthalten
+können, was zu unrealistisch hohen Kräften in der späteren MD-Simulation
+führen würde.
 
-Die beschr\"ankte Anzahl von Atomen in einem Simulationssystem f\"uhrt
-zu dem Problem wie man die R\"ander des Systems behandelt. In diesem
+Die beschränkte Anzahl von Atomen in einem Simulationssystem führt
+zu dem Problem wie man die Ränder des Systems behandelt. In diesem
 Versuch werden deshalb periodische Randbedingungen verwendet. Dies
-bedeutet, da\ss{} das Simulationssystem von virtuellen Kopien von sich selbst
+bedeutet, dass das Simulationssystem von virtuellen Kopien von sich selbst
 umgeben ist. Atome die das System zum Beispiel am linken Rand
 verlassen tauchen entsprechend am rechten Rand wieder auf.
 
@@ -514,36 +517,36 @@ verlassen tauchen entsprechend am rechten Rand wieder auf.
  \item Hast du den Theorie Teil vorher gelesen?
  \item Was ist ein Protein?
  \item Welche Längen, Massen und Zeitskalen sind für Moleküle/Proteine relevant?
- \item Welche Wechselwirkungen für Wassermoleküle relevant?
- \item Welche Information liefert eine Normal Mode Analysis NMA über ein Protein?
+ \item Welche Wechselwirkungen sind für Wassermoleküle relevant?
+ \item Welche Information liefert eine Normal Moden Analyse NMA über ein Protein?
+ \item Wie unterscheidet sich die NMA vom Dipol Autokorrelationsspektrum?
  \item Die quantenmechanische Anregungsenergie einer Vibrationsschwingung ist näherungsweise $E=\frac{1}{2}h \nu$. Die Frequenzen einer Dihedral-, 
  einer Winkel- und einer Bindungsschwingung seien $\nu_{dih}$=2 THz, $\nu_{win}$=12 THz, $\nu_{bin}$=60 THz, siehe Abbildung \ref{fig:forcefield}. 
  Die thermische Energie betrage $k_bT$.
  Was können wir über die thermische Anregungen dieser Schwingungen bei T=300, 500, 2000 K sagen?
  \item In einer NMA Rechnung treten bei Verwendung einer Steepest Descent minimierten Struktur imaginäre Eigenfrequenzen auf. Wo könnte das Problem sein?
- \item Damit ein Molekül ein IR Photon absorbieren kann, muss sich eine bestimmte physikalische Größe ändern, welche Größe könnte das sein?
 \end{enumerate}
 
 \pagebreak
 \section*{Durchführung}
-Der Assistent gibt euch am Versuchstag eine detalierte Anleitung zur Versuchsdurchführung. Programmier- oder Linuxkenntnisse sind nicht erforderlich.
+Der Assistent gibt euch am Versuchstag eine detaillierte Anleitung zur Versuchsdurchführung. Programmier- oder Linuxkenntnisse sind nicht erforderlich.
 Programme und Skripte zur Berechnung der Autokorrelationsfunktionen, Fouriertransformationen, Spektren, etc. werden bereitgestellt und kurz erklärt. 
 Auf Wunsch kann die Auswertung der Daten auch am Versuchstag mittels Matlab oder NumPy/Python erfolgen, der Assistent ist euch hierbei behilflich.
 
 \textbf{Frequenzanalyse von Wasser}
 \begin{enumerate}
  \item Visualisiert die Wasserbox mittels PyMol und bestimmt die Boxdimensionen.
- \item Führe eine Energieminimierung und anschließend eine Normal Mode Analyse des Wassermoleküls, sowie der Wasserbox durch.
- \item Erstelle ein Histogramm der NMA Frequenzen für beide Systeme.
- \item Speichert die Geschwindigszeitreihe der Wasserbox.
- \item Lasst euch von dem Assistenten die Berechnung des IR Absorbtionsspektrums mittels, calc\_nma\_amplitudes.py, aus den NMA Frequenzen $\omega_i$ und NMA Vektoren $\vec{\Omega}_i$ erklären.
- Berechne das Absorptionsspektrum für beide Systeme.
- \item Vergleiche das Absorptionsspektrum der Wasserbox mit dem Histogrammspektrum, welches ist sinnvoller?
- \item Plotte das Diffrenzabsorptionsspektrum $S_{H2Obox}(\omega)-S_{SingleH2O}(\omega)$. Notiere den Unterschied, wie lässt sich dieser Unterschied physikalisch erklären?
- \item Bereitet eine Molekulardynamiksimulation des Wassermoleküls, sowie der Wasserbox vor und simuliert je 100 ps mit Anfangsgeschwindigkeiten, die einer Temperatur von 300 Kelvin entsprechen.
+ \item Führt eine Energieminimierung und anschließend eine Normal Mode Analyse des Wassermoleküls, sowie der Wasserbox durch.
+ \item Erstellt ein Histogramm der NMA Frequenzen für beide Systeme.
+ \item Speichert die Geschwindigkeitszeitreihe der Wasserbox.
+ \item Lasst euch von dem Assistenten die Berechnung des IR Absorptionsspektrums mittels, calc\_nma\_amplitudes.py, aus den NMA Frequenzen $\omega_i$ und NMA Vektoren $\vec{\Omega}_i$ erklären.
+ Berechnet das Absorptionsspektrum für beide Systeme.
+ \item Vergleicht das Absorptionsspektrum der Wasserbox mit dem Histogramm Spektrum, welches ist sinnvoller?
+ \item Plotte das Differenz-Absorptionsspektrum $S_{H2Obox}(\omega)-S_{SingleH2O}(\omega)$. Notiere den Unterschied, wie lässt sich dieser Unterschied physikalisch erklären?
+ \item Bereitet eine Molekulardynamik Simulation des Wassermoleküls, sowie der Wasserbox vor und simuliert je 100 ps mit Anfangsgeschwindigkeiten, die einer Temperatur von 300 Kelvin entsprechen.
  \item Visualisiert die Trajektorie in PyMol.
  \item Speichert die Zeitreihe der Kinetischen Energie, sowie des Dipolmoments. 
- \item Lasst euch von dem Assistenten die Berechnung des IR Absorbtionsspektrums mittels, calc\_dipole\_spectrum.py, aus der Dipolmoment Zeitreihe $\mu(t)$ erklären.
+ \item Lasst euch von dem Assistenten die Berechnung des IR Absorptionsspektrums mittels, calc\_dipole\_spectrum.py, aus der Dipolmoment Zeitreihe $\mu(t)$ erklären.
  \item Vergleicht die berechneten Spektren mit dem experimentellen Absorptionsspektrum von Wasser.
 \end{enumerate}
 
@@ -553,12 +556,12 @@ Ein befreundeter experimental Chemiker möchte ein IR-Differenzspektrum zwischen
 kann nur einen kleinen Frequenzbereich $\Delta f=10$ THz scannen, muss seinem Chef jedoch schnell Ergebnisse liefern. Er gibt euch zwei Proteinstrukturen und möchte 
 gerne wissen in welchem Frequenzbereich er als erstes Messen soll, um ein sinnvolles IR Differenzspektrum zu erhalten.
 \begin{enumerate}
- \item Führt eine Energieminimierung beider Proteine durch und füllt die Simulationsboxen mit Wasser.
- \item Bereitet zwei Molekulardynamiksimulation der beiden Proteine vor und simuliert je 100 ps mit Anfangsgeschwindigkeiten, die einer Temperatur von 300 Kelvin entsprechen.
+ \item Füllt die Simulationsboxen mit Wasser und führt eine Energieminimierung beider Proteine durch.
+ \item Bereitet Molekulardynamik Simulation der beiden Proteine vor und simuliert je 100 ps mit Anfangsgeschwindigkeiten, die einer Temperatur von 300 Kelvin entsprechen.
  \item Speichert die Zeitreihe des Dipolmoments. 
- \item Benutzt das Skript calc\_dipole\_spectrum.py, um die Absorptionspektren für beide Proteine zu berechnen.
- \item Plotte die Diffrenzabsorptionsspektra $S_{ProteinA/B}(\omega)-S_{H2Obox}(\omega)$. Notiere die Unterschiede zum Wasserspektrum.
- \item Berechne das Diffrenzabsorptionsspektrum $S_{Protein_B}(\omega)-S_{Protein_A}(\omega)$. 
+ \item Benutzt das Skript calc\_dipole\_spectrum.py, um die Absorptionsspektren für beide Proteine zu berechnen.
+ \item Plotte die Differenz-Absorptionsspektra $S_{ProteinA/B}(\omega)-S_{H2Obox}(\omega)$. Notiere die Unterschiede zum Wasserspektrum.
+ \item Berechne das Differenz-Absorptionsspektrum $S_{Protein_B}(\omega)-S_{Protein_A}(\omega)$. 
  \item Plottet das Spektrum und bestimmt in welchem Bereich euer Chemiker Freund messen sollte.
  \item Der Assistent stellt euch die NMA Vektoren zu Protein B zur Verfügung. Visualisiert die Vektoren in PyMol und schätzt ab, welche Vibrationsbewegung der Änderung im Spektrum entspricht.
  \item Visualisiert beide Proteine in PyMol, welche Mutation liegt vor? Passt diese Mutation zu dem NMA Vektor aus dem vorherigen Versuchsabschnitt?
@@ -570,21 +573,21 @@ gerne wissen in welchem Frequenzbereich er als erstes Messen soll, um ein sinnvo
 \begin{enumerate}
  \item Plotte das Spektrum des Wasser Moleküls, sowie das Spektrum der Wasserbox. Beschreibe den Unterschied? Welche physikalischen Kräfte sind relevant?
  \item Bestimme das Differenzspektrum $S_{box}-S_{h2o}$. Welchem Experimentellen Setup entspricht dieses Differenzspektrum?
- \item Berechne aus der Geschwindigkeitsautokorrelationsfunktion von Wasser die Korrelationszeit. Was lernen wir über das 'Homöopathische Gedächnis' von Wasser, auf welchen Zeitskalen könnte es existieren?
+ \item Berechne aus der Geschwindigkeitsautokorrelationsfunktion von Wasser die Korrelationszeit. Was lernen wir über das 'Homöopathische Gedächtnis ' von Wasser, auf welchen Zeitskalen könnte es existieren?
  \item Vergleicht die berechneten Spektren mit dem experimentellen Absorptionsspektrum von Wasser.
 
  \item Plotte das Dipol Spektrum für beide Proteine, sowie das Differenzspektrum. Bestimmt die Frequenz des Differenzpeaks $\omega_{diff}$.
  \item Gleichung \ref{mastereq1} enthält den Winkel $\theta_{\mu,E_0}$ zwischen Feld $E_0$ und Dipolmoment $\mu$. Diese Gleichung gilt für eine Orientierung, wie erhält man hieraus die Absorptionswahrscheinlichkeit
  $p_{m,s}(t)$ für beliebige Orientierungen? Integriere.
  \item Nutze nun die modifizierte Gleichung \ref{mastereq1}, um für eine Feldfrequenz $\omega=\omega_{m,s}=\omega_{diff}$, einer Pulsdauer von $t=100$ fs und einem Feld $E_0=2\cdot10^8$ V/m
- die Absorptionswahrscheinlichkeit $p_{m,s}$ auszurechnen. Plotte $p_{m,s}$ für verschiede Frequenzen $\omega$ bei festem $\omega_{m,s}=\omega_{diff}$.
- \item Berechne die Fouriertransformation der Kinetischen Energie $E_{kin}(t)$ des Protein Systems und plotte das Fourierspektrum (Betragsquadrat der Fourierkoeffizienten). Worin unterscheidet sich dieses
+ die Absorptionswahrscheinlichkeit $p_{m,s}$ auszurechnen. Plotte $p_{m,s}$ für verschiedene Frequenzen $\omega$ bei festem $\omega_{m,s}=\omega_{diff}$.
+ \item Berechne die Fouriertransformation der Kinetischen Energie $E_{kin}(t)$ des Protein Systems und plotte das Fourierspektrum (Betragsquadrat der Fourier Koeffizienten). Worin unterscheidet sich dieses
  Spektrum von Infrarot Absorptionsspektrum $A(\omega)$ des Proteins?
  
  \item In welchem Frequenzbereich regt ein Mikrowellenherd an und warum? Interpretiere anhand der Frequenzen aus dem berechneten Proteinspektrum, was \emph{nicht} mit den Molekülen im Essen geschieht. 
  \item Moderne Flugzeuge ermöglichen inflight Satelliten Internetverbindungen mittels $K_a$ Band Kommunikation (26.5-40 GHz). Wie sieht es hier aus?
  \item Das Dipolmoment einer Wolke aus $N$ Punktladungen $q_i$ sei definiert als $p=\sum_i^N q_i (r_i-r_{ref})$, wobei $r_i$ die Position der Ladung $q_i$
- mit Entwicklungspunkt $r_{ref}$ sei. Zeige, dass das Dipolmoment für $Q=\sum_i^N q_i=0$ unabhänging vom Entwicklungspunkt $r_{ref}$ ist. Was bedeutet dies für
+ mit Entwicklungspunkt $r_{ref}$ sei. Zeige, dass das Dipolmoment für $Q=\sum_i^N q_i=0$ unabhängig vom Entwicklungspunkt $r_{ref}$ ist. Was bedeutet dies für
  die Berechnung von Dipolmoment basierten Spektren wenn $Q\neq0$ ist (nicht unübliches Setup!)?
 \end{enumerate}
 
